@@ -1,8 +1,5 @@
 const selectedPlayers = [];
 
-function display(name) {
-
-}
 
 function playerSelected(element) {
     const playerName = element.parentNode.children[1].innerText;
@@ -38,7 +35,6 @@ function playerSelected(element) {
         button.style.backgroundColor = 'gray';
         button.style.cursor = 'default';
         button.innerText = 'SELECTED';
-        display(selectedPlayers);
         const ul = document.getElementById('selectedPlayers').children[1];
         const createList = document.createElement('li');
         createList.innerText = selectedPlayers.length + '.' + ' ' + playerName;
@@ -46,3 +42,28 @@ function playerSelected(element) {
     }
 
 }
+const cost = [];
+let calculation = 0;
+
+document.getElementById('playerCostButton').addEventListener('click', function () {
+    const playerCostField = document.getElementById('playerCostField');
+    const perPlayerCost = playerCostField.value;
+    document.getElementById('playerCostValue').innerText = perPlayerCost * selectedPlayers.length;
+    cost.push(parseInt(perPlayerCost * selectedPlayers.length));
+
+})
+
+document.getElementById('totalCostButton').addEventListener('click', function () {
+    const managerCostField = document.getElementById('managerCostField');
+    const managerCost = managerCostField.value;
+    cost.push(parseInt(managerCost));
+    const coachCostField = document.getElementById('coachCostField');
+    const coachCost = coachCostField.value;
+    cost.push(parseInt(coachCost));
+
+    for (let i = 0; i < 3; i++) {
+        calculation = calculation + cost[i];
+    }
+    document.getElementById('finalCost').innerText = calculation;
+
+})
