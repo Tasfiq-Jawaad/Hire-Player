@@ -30,48 +30,69 @@
 
     <section class="players">
         <article class="players-body">
-            <div class="player-box">
+            <div class="player-box" id="player1">
                 <img src="assets/Lionel-Messi.jfif" alt="">
-                <h1>Lionel Messi</h1>
-                <button>SELECT</button>
+                <h1 class="playerName">Lionel Messi</h1>
+                <button style="background-color: #015196; cursor: pointer"
+                    onclick="playerSelected(this)">SELECT</button>
             </div>
             <div class="player-box">
                 <img src="assets/Cristiano-Ronaldo.jpg" alt="">
                 <h1>Cristiano Ronaldo</h1>
-                <button>SELECT</button>
+                <button style="background-color: #015196; cursor: pointer"
+                    onclick="playerSelected(this)">SELECT</button>
             </div>
             <div class="player-box">
                 <img src="assets/Neymar-Jr.jfif" alt="">
                 <h1>Neymar Jr</h1>
-                <button>SELECT</button>
+                <button style="background-color: #015196; cursor: pointer"
+                    onclick="playerSelected(this)">SELECT</button>
             </div>
             <div class="player-box">
                 <img src="assets/Kylian-Mbappé.jpg" alt="">
                 <h1>Kylian Mbappé</h1>
-                <button>SELECT</button>
+                <button style="background-color: #015196; cursor: pointer"
+                    onclick="playerSelected(this)">SELECT</button>
             </div>
             <div class="player-box">
                 <img src="assets/Luis-Suarez.jfif" alt="">
                 <h1>Luis Suarez</h1>
-                <button>SELECT</button>
+                <button style="background-color: #015196; cursor: pointer"
+                    onclick="playerSelected(this)">SELECT</button>
             </div>
             <div class="player-box">
                 <img src="assets/Sergio-Ramos.jfif" alt="">
                 <h1>Sergio Ramos</h1>
-                <button>SELECT</button>
+                <button style="background-color: #015196; cursor: pointer"
+                    onclick="playerSelected(this)">SELECT</button>
             </div>
+
+            <!-- The Modal -->
+            <div id="myModal" class="modal">
+
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <p>You can add upto five players</p>
+                </div>
+
+            </div>
+
         </article>
         <div id="selected-players-section">
-            <nav id="selected-players">
-                <h2>Selected Players</h2>
+            <nav id="selectedPlayers">
+                <h2>Selected - V</h2>
+                <ul type="none">
+
+                </ul>
             </nav>
             <nav id="budget">
                 <h2>Budget</h2>
             </nav>
         </div>
-
-
     </section>
+
+    <script src="players.js"></script>
 </body>
 
 <footer>
