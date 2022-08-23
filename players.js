@@ -49,11 +49,10 @@ document.getElementById('playerCostButton').addEventListener('click', function (
     const playerCostField = document.getElementById('playerCostField');
     const perPlayerCost = playerCostField.value;
     document.getElementById('playerCostValue').innerText = perPlayerCost * selectedPlayers.length;
-    cost[0] = parseInt(perPlayerCost * selectedPlayers.length);
-
 })
 
 document.getElementById('totalCostButton').addEventListener('click', function () {
+    cost[0] = parseInt((document.getElementById('playerCostField').value) * selectedPlayers.length);
     const managerCostField = document.getElementById('managerCostField');
     const managerCost = managerCostField.value;
     cost[1] = parseInt(managerCost);
