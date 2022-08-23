@@ -70,16 +70,37 @@ Players start
 /* ---------------------------
 Nav start
 -----------------------------*/
-#selected-players {
+#selected-players-section {
     width: 25%;
+}
+
+#selected-players {
+    width: 100%;
     height: 318px;
     background-color: black;
-    border-radius: 3%;
+    border-radius: 5%;
+    padding-top: 40px;
 }
 
 #selected-players h2 {
     color: #FFFFFF;
     text-align: center;
+    margin: 0 auto 0 auto;
+}
+
+#budget {
+    margin-top: 50px;
+    width: 100%;
+    height: 400px;
+    background-color: black;
+    border-radius: 5%;
+    padding-top: 40px;
+}
+
+#budget h2 {
+    color: #FFFFFF;
+    text-align: center;
+    margin: 0 auto 0 auto;
 }
 
 /* ---------------------------
