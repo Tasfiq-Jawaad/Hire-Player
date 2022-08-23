@@ -164,5 +164,24 @@ player-box start
 
 
 /* ---------------------------
-Players start
+Players end
 -----------------------------*/
+
+/* ---------------------------
+Footer start
+-----------------------------*/
+
+footer {
+    text-align: center;
+    margin-top: 100px;
+}
+
+footer hr {
+    color: #434343;
+    margin-bottom: 50px;
+}
+
+footer h3 {
+    color: #FFFFFF;
+    margin-bottom: 50px;
+}
